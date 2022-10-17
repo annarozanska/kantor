@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style/style.css" />
+		<title>Przelicznik walut</title>
+		<script
+			src="https://kit.fontawesome.com/a4c00a89bc.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<main>
+			<section class="container">
+				<div class="headline">
+					<h1>Przelicznik walut</h1>
+				</div>
+				<div class="item">
+					<input type="number" class="input-cash" placeholder="Kwota..." />
+					<select id="currency">
+						<option>EUR</option>
+						<option>USD</option>
+						<option>CHF</option>
+					</select>
+					<button class="btn-change">Przelicz</button>
+					<div>
+						<h1 class="converter">to: 00,00 PLN</h1>
+					</div>
+				</div>
+			</section>
+		</main>
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+		<script src="main.js"></script>
+	</body>
+</html>
