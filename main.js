@@ -20,7 +20,9 @@ const converter = () => {
 
 	if (!valueNum || valueNum === '') {
 		alert('Wprowadź kwotę');
-	} else {
+	}else if(valueNum <= 0) {
+		alert('Wprowadź kwotę większą od 0');
+	}else {
 		axios
 			.get(URL + `${valueOption}/`)
 			.then((res) => {
